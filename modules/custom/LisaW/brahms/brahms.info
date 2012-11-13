@@ -1,0 +1,16 @@
+name = Botanical Research and Herbarium Management (BRAHMS)
+description = Original Lisa Walley module to enable import of BRAHMS XML exports using Feeds and Feeds XPath Parser.
+package = "Solanaceae LisaW"
+dependencies[] = feeds
+dependencies[] = feeds_xpathparser
+dependencies[] = gbif_vocabularies
+core = 7.x
+
+; Helper
+files[] = includes/brahms.helper.inc
+
+;Feeds
+files[] = includes/feeds/plugins/BrahmsFetcher.inc
+
+;Libraries
+files[] = libraries/Brahms.inc

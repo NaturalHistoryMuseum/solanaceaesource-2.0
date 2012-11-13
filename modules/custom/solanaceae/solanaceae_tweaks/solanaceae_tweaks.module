@@ -1,0 +1,4 @@
+<?php
+function solanaceae_tweaks_init(){
+  drupal_add_css(drupal_get_path('module', 'solanaceae_tweaks') . '/css/solanaceae.css');
+}

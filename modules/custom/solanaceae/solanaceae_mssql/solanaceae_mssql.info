@@ -1,0 +1,4 @@
+core = "7.x"
+name = "Solanaceae mssql connection"
+description = "Original Lisa Walley module to provide an active connection to the SolanaceaeSource Sql Server DB"
+package = "Solanaceae"

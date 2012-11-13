@@ -1,0 +1,335 @@
+/*GENERIC TYPOGRAPHY*/
+
+body {
+	font-family: arial, sans-serif;
+	font-size: 101%;
+}
+
+h1 {
+}
+h2 {
+	font-size: 1.1em;
+	font-weight: normal;
+}
+h3 {
+	font-size: 1em;
+}
+h4 {
+	font-size: 0.85em;
+}
+h5 {
+	font-size: 0.75em;
+   }
+h6 {
+	font-size: 0.7em;
+}
+p, li, dt, dd, label, input, textarea, legend {
+   font-size: 0.75em;
+   font-family: arial, sans-serif; /*required for textarea*/
+}
+img {
+	font-size: 0.7em; /*alt text when image not display*/
+}
+li ul li {
+	font-size: 1em;
+}
+address {
+   	font-size: 0.8em;
+   	font-style: normal;
+}
+acronym {
+	speak: spell-out;
+}
+
+input.btn-submit, input.btn-reset {
+	font-size: 0.65em;
+}
+label input, label select, label textarea { /*to correct font size when input nested*/
+	font-size: 0.9em;
+}
+address {
+	font-size: 0.8em;
+	font-style: normal;
+}
+p {
+    word-spacing: 0.1em;
+}
+
+/*lists*/
+ul {
+	list-style: none;
+}
+ul.sol-bullet-list, ul.bullet-list {
+	list-style-type: disc;
+}
+ol {
+	/*list-style: ?;*/
+}
+ol.number-list {
+	/*list-style: ?;*/
+}
+dl {	
+}
+dt {
+	font-weight: bold;
+}
+/*tables*/
+caption {
+	font-size: 0.8em;
+}
+tfoot tr td {
+	font-style: normal;
+	font-size: 0.8em;
+}
+thead tr th {
+	font-size: 0.8em;
+	font-weight: bold;
+}
+tbody tr td {
+	font-size: 0.8em;
+}
+tbody tr td p {
+	font-size: 1em;
+}
+tbody tr td span.small-text {
+	font-size: 0.85em;
+}
+tbody tr td p.small-text {
+	font-size: 0.85em;
+}
+td table td, td table th {
+	font-size: 1em;
+}
+/*GENERIC CUSTOM CLASSES*/
+.note, .discreet, .small-text, .help-tip, div.video p, div#sol-col-title-nav div#toolbox li {
+	font-size: 0.6em;
+	font-family: verdana, arial;
+}
+span.note, span.small-text, span.help-tip {
+	font-size: 0.8em;
+}
+.strong {
+	font-weight: bold;
+}
+
+.scientific-name {}
+.scientific-name .genus { font-style: italic; }
+.scientific-name .genus-authority {}
+.scientific-name .specific-epithet { font-style: italic; }
+.scientific-name .specific-authority {}
+.scientific-name .infraspecific-epithet { font-style: italic; }
+.scientific-name .infraspecific-rank
+.scientific-name .infraspecific-authority {}
+
+.subgenus {}
+.clade {}
+.section {}
+
+.common-name {}
+
+.genus, .subgenus, .species, .specific-epithet, .infraspecific-epithet, .infraspecific-rank, .infraspecies, .collectors, .collector-num, .series, .sol-clade, .section, .clade, .tribe, .subgenus {
+	font-style: italic;
+}
+.authority, .infraspecific-rank, .rank, .family {
+	font-style: normal;
+}
+.name-acc {
+	font-weight: bold;
+}
+h3.name-acc span.de-emphasise {
+	font-size: 0.75em;
+	font-weight: normal;
+}
+.reference {}
+.reference .authors {}
+.reference .year {}
+.reference .title {}
+.reference .publication {}
+
+.primary-collector, .collectors-number, .series {
+	font-style: italic;
+}
+
+.sol-item-title {
+	font-weight: bold;
+}
+.sol-list-bar li {
+	font-size: 0.65em;
+}
+.example-text {
+	font-weight: bold;
+}
+div.data-protection h2 {
+	font-size: 0.75em;
+	font-weight: bold;
+}
+
+
+ul#nav-breadcrumbs-menu li {
+	font-size: 0.7em;
+}
+label#search-label {
+	font-weight: bold;
+}
+
+ul#sol-search-category li a {
+	font-size: 12px;
+	text-decoration: none;
+}
+div#sol-browse p {
+	font-size: 0.7em;
+}
+h2#sol-site-subtitle {
+	font-weight: normal;
+	font-size: 0.7em;
+	letter-spacing: 0.05em;
+}
+
+p.description-status {
+	color: #666;
+	font-size: 0.7em;
+}
+p#selected-item {
+	font-size: 0.6em;
+	color: #666;
+}
+/****SEARCH RESULTS LISTS*****/
+/**user prefs**/
+div#rec-prefs-set1 {
+}
+div#rec-prefs-set2 {
+}
+/**displaytags**/
+span.pagebanner { /*displaytag records found info*/
+	font-size: 0.7em;
+	font-weight: bold;
+}
+span.pagelinks { /*displaytag record navigation current has <strong> tags*/
+	font-size: 0.7em;
+}
+span.pagelinks span.btn-first a:visited, span.pagelinks span.btn-back a:visited, span.pagelinks span.btn-next a:visited, span.pagelinks span.btn-last a:visited {
+}
+span.pagelinks span.btn-first, span.pagelinks span.btn-back, span.pagelinks span.page-numbers, span.pagelinks span.btn-next, span.pagelinks span.btn-last {
+}
+span.pagelinks span.btn-first, span.pagelinks span.btn-back {
+}
+span.pagelinks span.page-numbers {
+}
+span.pagelinks span.btn-next, span.pagelinks span.btn-last {
+}
+span.pagelinks span.page-numbers span.current {
+	font-weight: bold;
+}
+table.search-results {
+}
+table.search-results td, table.search-results th { /*displaytag custom class name specimen records*/
+	font-size: 0.7em;
+}
+table.search-results div.syns ul li {
+	font-size: 0.95em;
+}
+table.search-results td a.hide {
+	font-size: 0.8em;
+	font-family: verdana, arial;
+}
+table#specimenSearchResults td span.type {
+	color: red;
+	font-weight: bold;
+}
+table#specimenSearchResults {
+}
+th.sorted {
+}
+th.sortable {
+}
+th.order1 {
+}
+tr.odd { /*displaytag odd rows*/
+}
+tr.even { /*displaytag even rows*/
+}
+div.exportlinks { /*displaytag export options also div.exportlinks span.export and span.csv or other media type*/
+	font-size: 0.7em;
+}
+div.exportlinks a:link, div.exportlinks a:visited {
+}
+
+
+table#sol-results td span.citation {
+	color: #999;
+	font-size: 0.85em;
+}
+table#sol-results td p.name-syn {
+	margin-bottom: 5px;
+}
+table.specimens th {
+	font-size: 0.6em;
+	font-family: verdana, arial;
+	text-align: left;
+	vertical-align: bottom;
+	padding: 0 2px;
+}
+table.specimens td {
+	font-size: 0.7em;
+	text-align: left;
+	vertical-align: top;
+	padding: 0 2px;
+}
+table.specimens td.type {
+	color: red;
+}
+
+div.gallery-item p {
+	font-size: 0.6em;
+}
+
+/*RELATED CONTENT*/
+ul.link-list li {
+	font-size: 0.65em;
+}
+
+div#sol-related-content h2 {
+	font-size: 0.8em;
+	font-weight: bold;
+}
+h3.sol-more {
+	font-size: 0.7em;
+	font-weight: bold;
+}
+div.sol-img p {
+	font-size: 0.7em;
+	line-height: 1.2em;
+}
+
+/*image detail*/
+a.img-change {
+	font-size: 0.6em;
+}
+
+/****NAVIGATION BAR****/
+div#site-nav a {
+	text-decoration: none;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+div#site-nav ul.level2-nav a {
+	font-weight: normal;
+}
+div#site-nav ul.level2-nav li.current-page a {
+	font-weight: bold;
+}
+div#site-nav ul.level2-nav li.current-page ul.level3-nav a {
+	font-weight: normal;
+}
+div#site-nav ul.level2-nav li.current-page ul.level3-nav li.current-page a {
+	font-weight: bold;
+}
+
+
+form#sol-feedback label input, form#sol-feedback label select, form#sol-feedback label textarea {
+	font-size: 1em;
+}
+/****FOOTER******/
+div#page-footer p {
+	font-size: 0.7em;
+}

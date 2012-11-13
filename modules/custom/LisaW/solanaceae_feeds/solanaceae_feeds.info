@@ -1,0 +1,4 @@
+core = "7.x"
+name = "Solanaceae feeds"
+description = "Original Lisa Walley module to provide an feed from active connection to the SolanaceaeSource Sql Server DB"
+package = "Solanaceae LisaW"

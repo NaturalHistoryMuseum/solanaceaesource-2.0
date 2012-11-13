@@ -1,0 +1,7 @@
+core = "7.x"
+name = "Brahms XML feeds"
+description = "Feeds from Brahms"
+package = "Solanaceae"
+dependencies[] = feeds_tamper
+
+files[] = brahms_xml_feeds.module
