@@ -6,7 +6,7 @@
 	float: left;
 	margin-right: 1em;
 }
-.views-field.views-field-title {
-	margin-bottom: 1em;
+.views-field.views-field-body {
+	margin-top: 1em;
 	border: 1px solid red;
 }
