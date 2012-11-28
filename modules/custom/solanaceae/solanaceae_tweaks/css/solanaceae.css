@@ -6,7 +6,6 @@
 	float: left;
 	margin-right: 1em;
 }
-.view-solanaceae-field-work-content .views-field.views-field-body {
+.view-solanaceae-field-work-content .view-display-id-page .views-field.views-field-body {
 	margin-top: 1em;
-	border: 1px solid red;
 }
