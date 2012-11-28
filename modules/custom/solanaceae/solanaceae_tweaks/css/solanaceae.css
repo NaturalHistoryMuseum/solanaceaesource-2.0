@@ -10,7 +10,7 @@
 	margin-top: 1em;
 }
 
-div.view-solanaceae-field-work-content div.views-slideshow-pager-field-item{
-  display: inline; 
-  border: 1px solid red;
+div.view-solanaceae-field-work-content div.views-slideshow-pager-field-item {
+  float:left;
+  padding-right: 5px;
 }
