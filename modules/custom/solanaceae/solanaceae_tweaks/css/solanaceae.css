@@ -1,3 +1,7 @@
+.view-solanaceae-field-work-content .item-list ul li {
+	float: left;
+	border: 1px solid red;
+}
 .views-field.views-field-field-sol-fw-intro-image {
 	float: left;
 	margin-right: 1em;
