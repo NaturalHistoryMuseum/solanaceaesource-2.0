@@ -23,3 +23,6 @@ div.view-solanaceae-field-work-content div.views-slideshow-pager-field-item {
 	width: 100% !important;
 	text-align:center;
 }
+.view-solanaceae-field-work-content view-id-solanaceae_field_work_content .views-slideshow-controls-bottom {
+	margin-left:82px;
+}
