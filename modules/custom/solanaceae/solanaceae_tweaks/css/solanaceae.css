@@ -10,7 +10,17 @@
 	margin-top: 1em;
 }
 
+#views_slideshow_cycle_main_solanaceae_field_work_content-attachment_1 {
+	text-align: center;
+}
 div.view-solanaceae-field-work-content div.views-slideshow-pager-field-item {
-  float:left;
-  padding-right: 5px;
+	float:left;
+	padding-right: 1em;
+	padding-bottom: 1em;
+}
+
+#views_slideshow_cycle_main_solanaceae_field_work_content-attachment_1 .views-slideshow-cycle-main-frame-row {
+	border: 1px solid red;
+	width: 100% !important;
+	text-align:center;
 }
