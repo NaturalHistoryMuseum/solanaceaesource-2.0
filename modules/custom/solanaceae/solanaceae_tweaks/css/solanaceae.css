@@ -27,6 +27,7 @@ div.view-solanaceae-field-work-content div.views-slideshow-pager-field-item {
 	margin-left:82px;
 }
 
-.view-solanaceae-field-work-content .view-solanaceae-field-work-content .grid-8 {
-	margin-left:12.5%
+.view-solanaceae-field-work-content .view-solanaceae-field-work-content.grid-8 {
+	margin-left:12.5%;
+	border: 1px solid red;
 }
