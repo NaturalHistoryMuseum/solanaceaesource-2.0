@@ -9,7 +9,6 @@
 .view-solanaceae-field-work-content .views-field.views-field-body {
 	margin-top: 1em;
 }
-
 #views_slideshow_cycle_main_solanaceae_field_work_content-attachment_1 {
 	text-align: center;
 }
@@ -18,7 +17,6 @@ div.view-solanaceae-field-work-content div.views-slideshow-pager-field-item {
 	padding-right: 1em;
 	padding-bottom: 1em;
 }
-
 #views_slideshow_cycle_main_solanaceae_field_work_content-attachment_1 .views-slideshow-cycle-main-frame-row {
 	width: 100% !important;
 	text-align:center;
@@ -26,8 +24,13 @@ div.view-solanaceae-field-work-content div.views-slideshow-pager-field-item {
 .view-solanaceae-field-work-content .views-slideshow-controls-bottom {
 	margin-left:82px;
 }
-
 .view-solanaceae-field-work-content .view-solanaceae-field-work-content.grid-8 {
 	margin-left:12.5%;
+	border: 1px solid red;
+}
+.view-solanaceae-field-work-content .views-field-field-description {
+	border: 1px solid red;
+}
+.view-solanaceae-field-work-content .views-field-field-description .filed-content{
 	border: 1px solid red;
 }
