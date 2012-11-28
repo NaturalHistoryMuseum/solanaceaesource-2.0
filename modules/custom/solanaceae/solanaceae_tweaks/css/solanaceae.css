@@ -26,11 +26,12 @@ div.view-solanaceae-field-work-content div.views-slideshow-pager-field-item {
 }
 .view-solanaceae-field-work-content .view-solanaceae-field-work-content.grid-8 {
 	margin-left:12.5%;
-	border: 1px solid red;
 }
 .view-solanaceae-field-work-content .views-field-field-description {
 	border: 1px solid red;
+	background: rgba(0, 0, 0, 0.6);
 }
 .view-solanaceae-field-work-content .views-field-field-description .filed-content{
 	border: 1px solid red;
+	font-color:#ffffff;
 }
