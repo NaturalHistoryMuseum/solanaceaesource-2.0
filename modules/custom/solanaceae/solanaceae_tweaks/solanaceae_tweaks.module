@@ -1,4 +1,10 @@
 <?php
+
 function solanaceae_tweaks_init(){
+  global $user;
+    
   drupal_add_css(drupal_get_path('module', 'solanaceae_tweaks') . '/css/solanaceae.css');
+  if (in_array('maintainer', $user->roles)) {
+    drupal_add_css(drupal_get_path('module', 'solanaceae_tweaks') . '/css/role.css');
+  }
 }
