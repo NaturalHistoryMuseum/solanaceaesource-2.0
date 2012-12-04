@@ -1,4 +1,0 @@
-core = "7.x"
-name = "Alter modules list"
-description = "Set the modules list to collapsed by default"
-package = "Solanaceae"

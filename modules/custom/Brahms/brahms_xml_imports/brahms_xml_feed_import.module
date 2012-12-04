@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Brahms XML feed import feature.
- */
-
-include_once('brahms_xml_feed_import.features.inc');

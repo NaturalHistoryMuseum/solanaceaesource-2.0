@@ -1,9 +1,0 @@
-<?php
-// http://drupal.org/node/1249726
-function alter_mod_list_form_alter(&$form, &$form_state, $form_id){
-  if($form_id == 'system_modules'){
-    foreach(element_children($form['modules']) as $package){
-      $form['modules'][$package]['#collapsed'] = TRUE;
-    }
-  }
-}
