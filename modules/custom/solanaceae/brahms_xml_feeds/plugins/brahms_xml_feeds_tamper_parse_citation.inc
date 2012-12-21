@@ -72,7 +72,7 @@ function brahms_xml_feeds_tamper_parse_citation_callback($result, $item_key, $el
 }
 
 function brahms_parse_title($field) {
-	// find the first number in the string and make title be string up to number
+	// find the first number in the string and make title be the string up to the number
 	list($matstr,$matpos) = digpos($field);
 	if ($matpos !== false) {
 		//  dsm( "The digits [$matstr] were found at position [$matpos] in the string [$field]<br>\n");
@@ -81,7 +81,7 @@ function brahms_parse_title($field) {
 		// dsm( "No digits were found in the string [$field]<br>\n");
 	}
 	$title = trim($title);
-	rtrim($title, '(');
+	$title =  rtrim($title, '(');
 	return $title;
 }
 
