@@ -49,7 +49,9 @@ function brahms_xml_feeds_tamper_parse_citation_form($importer, $element_key, $s
 }
 
 function brahms_xml_feeds_tamper_parse_citation_callback($result, $item_key, $element_key, &$field, $settings){
-	$result->items[$item_key][$settings['brahmsBibioSecondaryTitle']] = $title; //biblio_secondary_title ie journal name
+	$parsedTitle = brahms_parse_title($field);
+	
+	$result->items[$item_key][$settings['brahmsBibioSecondaryTitle']] = $parsedTitle; //biblio_secondary_title ie journal name
 	//$result->items[$item_key]['xpathparser:16'] = $title; //biblio_secondary_title
 	
 	$volume = brahms_parse_volume($field);
@@ -60,8 +62,8 @@ function brahms_xml_feeds_tamper_parse_citation_callback($result, $item_key, $el
 	$result->items[$item_key][$settings['brahmsBibioStartPage']] = $start_page; //biblio_section
 	//$result->items[$item_key]['xpathparser:17'] = $start_page; //biblio_section
 	
-	$title = brahms_parse_title($field);
-	$result->items[$item_key][$settings['brahmsBibioPageTitle']] = $title.' '.$volume ; // page title and volume
+
+	$result->items[$item_key][$settings['brahmsBibioPageTitle']] = $parsedTitle.' '.$volume ; // page title and volume
 	//$result->items[$item_key]['xpathparser:5'] = $title; // page title
 
 	//$author_type = brahms_parse_author_type($field);
