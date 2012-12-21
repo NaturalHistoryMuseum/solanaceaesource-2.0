@@ -50,7 +50,7 @@ function brahms_xml_feeds_tamper_parse_citation_form($importer, $element_key, $s
 
 function brahms_xml_feeds_tamper_parse_citation_callback($result, $item_key, $element_key, &$field, $settings){
 	$title = brahms_parse_title($field);
-	$result->items[$item_key][$settings['brahmsBibioPageTitle']] = $title . "test "; // page title
+	$result->items[$item_key][$settings['brahmsBibioPageTitle']] = $title; // page title
 	//$result->items[$item_key]['xpathparser:5'] = $title; // page title
 	
 	$result->items[$item_key][$settings['brahmsBibioSecondaryTitle']] = $title; //biblio_secondary_title ie journal name
