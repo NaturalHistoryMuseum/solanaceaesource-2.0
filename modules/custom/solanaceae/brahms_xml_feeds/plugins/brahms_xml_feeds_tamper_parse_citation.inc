@@ -80,6 +80,7 @@ function brahms_parse_title($field) {
 	} else {
 		// dsm( "No digits were found in the string [$field]<br>\n");
 	}
+	rtrim($title, "(")
 	return $title;
 }
 
