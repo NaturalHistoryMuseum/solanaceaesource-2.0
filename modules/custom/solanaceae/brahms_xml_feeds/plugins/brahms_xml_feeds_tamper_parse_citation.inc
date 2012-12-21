@@ -21,28 +21,28 @@ function brahms_xml_feeds_tamper_parse_citation_form($importer, $element_key, $s
     '#type' => 'radios',
     '#default_value' => isset($settings['brahmsBibioPageTitle']) ? $settings['brahmsBibioPageTitle'] : key($sources),
     '#options' => $sources,
-    '#title' => t('Field to set as the page title'),
+    '#title' => t('Field to set and parse as the page title'),
     '#description' => t('Select the field you want to contain the tampered/parsed biblio content page title.')
   );
   $form['brahmsBibioSecondaryTitle'] = array(
     '#type' => 'radios',
     '#default_value' => isset($settings['brahmsBibioSecondaryTitle']) ? $settings['brahmsBibioSecondaryTitle'] : key($sources),
     '#options' => $sources,
-    '#title' => t('Field to set as the secondary title'),
-    '#description' => t('Select the field you want to contain the tampered/parsed biblio secondary title.')
+    '#title' => t('Field to set and parse as the secondary title, in this case as journal name'),
+    '#description' => t('Select the field you want to contain the tampered/parsed biblio secondary title ie journal name.')
   );
   $form['brahmsBibioVolume'] = array(
     '#type' => 'radios',
     '#default_value' => isset($settings['brahmsBibioVolume']) ? $settings['brahmsBibioVolume'] : key($sources),
     '#options' => $sources,
-    '#title' => t('Field to set as the biblio volume'),
+    '#title' => t('Field to set as the parsed biblio volume'),
     '#description' => t('Select the field you want to contain the tampered/parsed biblio volume.')
   );
   $form['brahmsBibioStartPage'] = array(
     '#type' => 'radios',
     '#default_value' => isset($settings['brahmsBibioStartPage']) ? $settings['brahmsBibioStartPage'] : key($sources),
     '#options' => $sources,
-    '#title' => t('Field to set as the start page'),
+    '#title' => t('Field to set as parsed the start page'),
     '#description' => t('Select the field you want to contain the tampered/parsed biblio start page.')
   );
   return $form;
@@ -50,10 +50,10 @@ function brahms_xml_feeds_tamper_parse_citation_form($importer, $element_key, $s
 
 function brahms_xml_feeds_tamper_parse_citation_callback($result, $item_key, $element_key, &$field, $settings){
 	$title = brahms_parse_title($field);
-	$result->items[$item_key][$settings['brahmsBibioPageTitle']] = $title; // page title
+	$result->items[$item_key][$settings['brahmsBibioPageTitle']] = $title . "test "; // page title
 	//$result->items[$item_key]['xpathparser:5'] = $title; // page title
 	
-	$result->items[$item_key][$settings['brahmsBibioSecondaryTitle']] = $title; //biblio_secondary_title
+	$result->items[$item_key][$settings['brahmsBibioSecondaryTitle']] = $title; //biblio_secondary_title ie journal name
 	//$result->items[$item_key]['xpathparser:16'] = $title; //biblio_secondary_title
 	
 	$volume = brahms_parse_volume($field);
