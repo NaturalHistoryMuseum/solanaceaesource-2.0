@@ -1,54 +1,37 @@
-/* hide unwanted genera unles role is maintainer*/
-/* dev site */
-.tinytax li#tinytax-94860 {
+/* hide unwanted genera unless role is maintainer*/
+/*Boraginaceae*/
+.tinytax li#tinytax-69012 { 
 	display:none;
 }
-.tinytax li#tinytax-94855 {
+/*Caricaceae*/
+.tinytax li#tinytax-69007 {
 	display:none;
 }
-.tinytax li#tinytax-94861 {
+/*Fabaceae*/
+.tinytax li#tinytax-69013 {
 	display:none;
 }
-.tinytax li#tinytax-94859 {
+/*Gesneriaceae*/
+.tinytax li#tinytax-69011 {
 	display:none;
 }
-.tinytax li#tinytax-94854 {
+/*Indet*/
+.tinytax li#tinytax-69004 {
 	display:none;
 }
-.tinytax li#tinytax-94858 {
+/*Moraceae*/
+.tinytax li#tinytax-69006 {
 	display:none;
 }
-.tinytax li#tinytax-94857 {
+/*Polemoniaceae*/
+.tinytax li#tinytax-69010 {
 	display:none;
 }
-.tinytax li#tinytax-94856 {
+/*Rutaceae*/
+.tinytax li#tinytax-69009 {
 	display:none;
 }
-/* end dev site */
-
-/* live site */
-.tinytax li#tinytax-3682 {
+/*Scrophulariaceae*/
+.tinytax li#tinytax-69008 {
 	display:none;
 }
-.tinytax li#tinytax-3677 {
-	display:none;
-}
-.tinytax li#tinytax-3683 {
-	display:none;
-}
-.tinytax li#tinytax-3681 {
-	display:none;
-}
-.tinytax li#tinytax-3676 {
-	display:none;
-}
-.tinytax li#tinytax-3680 {
-	display:none;
-}
-.tinytax li#tinytax-3679 {
-	display:none;
-}
-.tinytax li#tinytax-3678 {
-	display:none;
-}
-/* end live site */
