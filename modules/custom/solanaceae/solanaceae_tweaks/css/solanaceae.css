@@ -39,3 +39,7 @@ div.view-solanaceae-field-work-content div.views-slideshow-pager-field-item
 	margin-left: 12.5%;
 }
 /* end field work */
+/* user picture */
+.site-solanaceae-myspecies-info .profile .user-picture {
+	float:none;
+}
