@@ -17,6 +17,21 @@ function solanaceae_itis_form_taxonomy_form_term_alter(&$form, &$form_state, $fo
   $form['field_usage'][$form['field_usage']['#language']]['#options'] = array_merge(array(
     '_none' => $form['field_usage'][$form['field_usage']['#language']]['#options']['_none']
   ), $field_usage_allowed_values);
+  $field_rank_allowed_values = solanaceae_itis_allowed_values(array(
+    'field_name' => 'field_rank'
+  ), $vids[$form['vid']['#value']]);
+  $itis_field_rank_allowed_values = itis_term_allowed_values(array(
+    'field_name' => 'field_rank'
+  ), $vids[$form['vid']['#value']]);
+  if(array_diff_key($itis_field_rank_allowed_values, $field_rank_allowed_values)){
+    $newRankTerms = implode(' ,', array_diff_key($itis_field_rank_allowed_values, $field_rank_allowed_values));
+    drupal_set_message(t('There is a new allowed term in Itis: @newTerm. Please have admin update this module.', array(
+      '@newRankTerms' => $newRankTerms
+    )), 'warning');
+  }
+  $form['field_rank'][$form['field_rank']['#language']]['#options'] = array_merge(array(
+    '_none' => $form['field_rank'][$form['field_rank']['#language']]['#options']['_none']
+  ), $field_rank_allowed_values);
 }
 
 /**
@@ -73,8 +88,11 @@ function solanaceae_itis_allowed_values($field, $biological_type = FALSE){
               'Subspecies' => 'Subspecies',
               'Variety' => 'Variety',
               'Subvariety' => 'Subvariety',
+              'Convariety' => 'Convariety',
+              'Provariety' => 'Provariety',
               'Form' => 'Form',
-              'Subform' => 'Subform'
+              'Subform' => 'Subform',
+              'No status' => 'No status'
             );
           case 3:
             return array(
